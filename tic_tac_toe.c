@@ -15,7 +15,7 @@ void draw_board();
 void player_first();
 void put_X_O(char ch,int pos);
 COORD coord= {0,0}; // this is global variable
-//center of axis is set to the top left cornor of the screen
+//center of axis is set to the top left cornor of your screen
 void gotoxy(int x,int y)
 {
     coord.X=x;
