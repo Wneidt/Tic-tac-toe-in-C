@@ -2,7 +2,7 @@
 #include<conio.h>
 #include<stdlib.h>
 #include <windows.h>
-
+//creating board
 int board[10] = {2,2,2,2,2,2,2,2,2,2};
 int turn = 1,flag = 0;
 int player,comp;
