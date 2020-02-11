@@ -23,19 +23,14 @@ void gotoxy(int x,int y)
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
 }
 
-void main()
-{
+void main(){
     system("cls");
     menu();
     getch();
 
 }
 
-void menu()
-
-
-
-{
+void menu(){
     int choice;
     system("cls");
     printf("\n--------MENU--------");
@@ -64,8 +59,7 @@ void menu()
     }
 }
 
-int make2()
-{
+int make2(){
     if(board[5] == 2)
         return 5;
     if(board[2] == 2)
@@ -79,8 +73,7 @@ int make2()
     return 0;
 }
 
-int make4()
-{
+int make4(){
     if(board[1] == 2)
         return 1;
     if(board[3] == 2)
@@ -92,8 +85,7 @@ int make4()
     return 0;
 }
 
-int posswin(int p)
-{
+int posswin(int p){
 // p==1 then X   p==0  then  O
     int i;
     int check_val,pos;
@@ -155,8 +147,7 @@ int posswin(int p)
     return 0;
 }
 
-void go(int n)
-{
+void go(int n){
     if(turn % 2)
         board[n] = 3;
     else
